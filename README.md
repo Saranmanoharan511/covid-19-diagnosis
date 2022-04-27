@@ -10,7 +10,7 @@ COVID-19 DETECTOR AI
 </div>
 
 
-### Live Demo : [Heroku App]()
+### Live Demo : [Heroku Web App](https://covid-diagniosis-ai.herokuapp.com)
 ## Tech Stack
 - PyTorch (DL Model)
 - OpenCV 
@@ -32,6 +32,6 @@ COVID-19 DETECTOR AI
 > I assume you have already created heroku account and Heroku CLI on your machine. If not, follow this  [tutorial](https://devcenter.heroku.com/start).
 2) Open a terminal on the project directory and create a heroku application using `heroku create covid19-xray-detector`
 3) Since I use OpenCV Contrib Library, it requires `libsm6 libxender1` and it can be installed only though `apt-get`. So we import buildpack in heroku, use `heroku buildpacks:add --index 1 heroku-community/apt`.
-4) Create Aptfile, refer [this](https://github.com/arunpandian7/covid-detector-flask/blob/master/Aptfile)
+4) Create Aptfile, refer [this](https://github.com/Saranmanoharan511/covid-19-diagnosis/blob/main/Aptfile)
 5) Now you are all set to go, deploy with a single command `git push heroku master`.
 
