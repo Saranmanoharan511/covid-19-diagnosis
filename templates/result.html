@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+	
+	<form class="form-signin" method=post enctype=multipart/form-data>
+		<h1 class="h1 mb-6 ">🧑‍⚕️ <br>COVID-19 Detector AI</h1>
+		<h5 class="h5 mb-4 font-weight-light ">A Deep Learning based X-ray Diagnosis App <br> built with PyTorch, Flask and Bootstrap</h4>
+
+		{% if name == "normal"%}
+			<h4 class="h4 mb-3 font-weight-normal"> Result : <font color="green">COVID Negative </font> </h4>
+		{% else %}
+			<h4 class="h4 mb-3 font-weight-normal"> Result : <font color="red">COVID Positive </font></h5>
+		{% endif %}
+		<a href="{{ url_for('upload_file')}}" class="btn btn-lg btn-primary btn-block">🔙  RETURN </a>
+		<p class="mt-5 mb-3 credits">GitHub <a href="https://github.com/Saranmanoharan511/covid-19-diagnosis">Repo</a></p>
+		<p class=" mb-3 credits" >Built by <a href="https://arunpandian7.github.io">Saran M, Ratheesh Babu TR, Madhvi Kunwar Rana, Shreeya Baniya</a></p>
+		
+	</form>
+{% endblock %}
